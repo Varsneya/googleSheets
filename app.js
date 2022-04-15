@@ -8,7 +8,7 @@ let authorizeButton = document.getElementById('authorize_button');
 let signoutButton = document.getElementById('signout_button');
 let sectSave = document.getElementById('save');
 let sectFetch = document.getElementById('fetch');
-let firstFetch = true;
+let frstFetch = true;
 function handleClientLoad() {
     gapi.load('client:auth2', initClient);
 }
