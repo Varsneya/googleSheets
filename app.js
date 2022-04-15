@@ -6,9 +6,10 @@ const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v
 const SCOPES = "https://www.googleapis.com/auth/drive";
 let authorizeButton = document.getElementById('authorize_button');
 let signoutButton = document.getElementById('signout_button');
+let firstFetch = true;
 let sectSave = document.getElementById('save');
 let sectFetch = document.getElementById('fetch');
-let frstFetch = true;
+
 function handleClientLoad() {
     gapi.load('client:auth2', initClient);
 }
