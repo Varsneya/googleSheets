@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=My+Soul&family=Raleway:wght@800&family=Square+Peg&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Task 1</title>
+</head>
+<body>
+  <!-- <img src="assets/bg_img.jpg" id="bg" alt=""> -->
+  <h1>Please Sign In to proceed</h1>
+  <br>
+  <div class="auth">
+    <button class="btn btn-success" id="authorize_button" style="display: none;">Sign In</button>
+    <button class="btn btn-danger" id="signout_button" style="display: none;">Sign Out</button>
+  </div>
+  
+  <br>
+  <section id="save" style="display: none;"> 
+    <h2 class="header">Insertion</h2>
+    <form action="" method="post" id="form1">  
+      <div class="group">
+        <input type="text" class="form-control" placeholder="First name" id="first-name" aria-label="First name">
+        <input type="text" class="form-control" placeholder="Last name" id="last-name"  aria-label="Last name">
+      </div>
+      <button type="submit" class="btn btn-primary" id="save-btn">Save</button>
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img id="logo" src="./assets/success_toast.jpg" class="rounded me-2" alt="...">
+            <strong class="me-auto">Your Data Was Saved!!!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <br>
+  <br>
+  <section id="fetch" style="display: none;">
+    <h2 class="header">Searching</h2>
+    <form action="" method="get" id="form2">
+      <div class="group" >
+        <input type="text" class="form-control" placeholder="First name" id="sfirst-name" aria-label="First name">
+      </div>
+      <button type="submit" class="btn btn-primary" id="fetch-btn">Fetch</button>
+    </form>
+  </section>
+  <ul id="res">
+
+  </ul>
+  <script src="app.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </script>
+</body>
+</html>
