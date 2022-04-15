@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.auth{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    text-align: center;
+}
+
+.group{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#first-name, #last-name, #sfirst-name{
+    width: 30%
+}
+
+#save-btn ,#fetch-btn{
+    margin: 2% 48% 2%;
+}
+
+
+#logo{
+    max-width: 2em;
+    max-height: 2em;
+}
+
+#fetch-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body {
+    min-height:100%;
+    background-image:url(assets/bg_img.jpg);
+    background-size:cover;
+}
+
+#res{
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
